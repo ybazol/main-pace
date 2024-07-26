@@ -73,15 +73,12 @@ ul li a, ul li .dropdown-header {
   text-decoration: none;
   text-align: center;
   color: black;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 ul li:hover a {
   color: var(--main-purple);
-}
-
-ul li.nav-active a {
-  color: var(--main-purple);
+  font-weight: 700;
 }
 
 ul li img {
@@ -142,5 +139,65 @@ ul li.nav-btn a {
 
 ul li.nav-btn:hover a {
   background-color: var(--main-purple);
+}
+
+.logo-main {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-main .left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-main .left-section img {
+  width: 40px;
+  margin-left: 80px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.logo-main .left-section a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.logo-main .middle-section {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logo-main .middle-section img {
+  width: 90px;
+  height: 100px;
+}
+
+.logo-main .middle-section .logo-header {
+  font-size: 40px;
+  color: var(--main-purple);
+  margin-left: 20px;
+  line-height: 40px;
+}
+
+.logo-main .middle-section .logo-header span {
+  color: var(--secondary-blue);
+  font-size: 20px;
+}
+
+.logo-main .right-section {
+  display: flex;
+  margin-right: 80px;
+  gap: 20px;
+}
+
+.logo-main .right-section img {
+  background-color: lightgray;
+  padding: 10px 10px;
+  border-radius: 20px;
 }
 
