@@ -1,7 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
-    -main-purple: #6a1b9a;
-    -secondary-blue: #4a3aff;
-    -main-text: #211f54;
+    --main-purple: #6a1b9a;
+    --secondary-blue: #4a3aff;
+    --main-text: #211f54;
 }
 
 /* Typography */
@@ -35,3 +40,107 @@
     font-size: 42px;
     line-height: 50px;
 }
+
+
+/* Navigation Bar */
+.top-nav {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  top: 20px;
+  left: 0;
+  justify-content: center;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+
+ul li {
+  position: relative;
+  padding-right: 20px;
+}
+
+ul li a, ul li .dropdown-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+}
+
+ul li:hover a {
+  color: var(--main-purple);
+}
+
+ul li.nav-active a {
+  color: var(--main-purple);
+}
+
+ul li img {
+  margin-left: 8px;
+}
+
+ul li .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 999;
+  display: none;
+  min-width: 200px;
+  border-radius: 20px;
+}
+
+ul li .dropdown-content li {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+ul li .dropdown-content li a {
+  padding: 18px 25px;
+}
+
+ul li:hover .dropdown-content {
+  display: block;
+}
+
+ul li .dropdown-2rows {
+  display: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+ul li:hover .dropdown-2rows {
+  display: grid;
+}
+
+ul li .dropdown-2rows li {
+  padding: 5px 0;
+}
+
+ul li img {
+  width: 16px;
+  height: 16px;
+}
+
+ul li.nav-btn a {
+  background-color: var(--secondary-blue);
+  color: white;
+  padding: 15px 25px;
+  margin-top: 5px;
+  border-radius: 20px;
+}
+
+ul li.nav-btn:hover a {
+  background-color: var(--main-purple);
+}
+
