@@ -34,6 +34,13 @@
     font-weight: 400;
     font-style: italic;
   }
+
+  .mont {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
   
   h1 {
     color: var(-main-purple);
@@ -273,3 +280,105 @@ ul li.nav-btn:hover a {
   object-fit: cover;
 }
 
+
+/* Cards Section */
+
+.card-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card-section::after { 
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(/Assets/images/purple\ circle.svg);
+  background-position: right;
+  background-repeat: repeat-y;
+  background-size: 430px auto;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 50px;
+  color: var(--main-text);
+}
+
+.card-subheader {
+  text-align: center;
+  font-size: 25px;
+  color: var(--main-purple);
+}
+
+.card-section .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 80px;
+  padding-right: 80px;
+  gap: 65px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card-section .cards .card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 15px 20px var(--main-purple);
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: 330px;
+}
+
+.card-section .card-number {
+  color: var(--main-purple);
+  font-size: 60px;
+}
+
+.card-section .card-head {
+  color: var(--main-text);
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card-section .card-head span {
+  color: var(--main-purple);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.card-section .cards .card p {
+ color: var(--main-text);
+ line-height: 25px;
+}
+
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--main-purple);
+  color: white;
+  padding: 20px 40px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background-color: var(--secondary-blue);
+}
+
+.card-btn img {
+  width: 20px;
+  padding-left: 8px;
+  display: inline-block;
+}
