@@ -389,6 +389,8 @@ ul li.nav-btn:hover a {
   margin-top: 80px;
   text-align: center;
   padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .diagnostic-circles::after {
@@ -469,4 +471,93 @@ ul li.nav-btn:hover a {
 .diagnostic h1:hover {
   color: var(--main-purple);
   text-decoration: underline;
+  font-size: 22px;
+}
+
+/* Testimonials */
+
+.testimonials-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.testimonials-section h1 {
+  text-align: center;
+  color: var(--main-text);
+  font-size: 46px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.testimonials-section p {
+  color: var(--main-text);
+  font-size: 18px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  height: 900px;
+  transition: transform 0.3s ease;
+}
+
+.testimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.testimonial:hover::before {
+  background-color: rgba(74, 58, 255, 0.72);
+}
+
+.testimonial h3,
+.testimonial p {
+  position: relative;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin: 0;
+}
+
+.testimonial h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-size: 16px;
+}
+
+.testimonial:hover h3,
+.testimonial:hover p {
+  opacity: 1;
 }
