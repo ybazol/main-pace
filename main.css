@@ -561,3 +561,123 @@ ul li.nav-btn:hover a {
 .testimonial:hover p {
   opacity: 1;
 }
+
+/* Form */
+
+.form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  color: var(--main-text);
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.form p {
+  color: var(--main-purple);
+}
+
+.form .map-info {
+  margin-top: 35px;
+  box-shadow: 0px 0px 30px 8px rgba(20, 20, 43, 0.06);
+  border-radius: 20px;
+  margin-right: 110px;
+}
+
+.form .map-link {
+  display: block;
+  background-image: url(/Assets//images/map-brix-templates-v2-.png);
+  width: 500px;
+  height: 330px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.form .email {
+  margin-top: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+.form .phone {
+  margin-top: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+  text-align: center;
+}
+
+.form .form-right {
+  margin-top: 140px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 20px 20px 20px 0px var(--main-purple);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: var(--main-text);
+  font-size: 16px;
+  font-family: lato;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  height: 70px; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--main-purple); 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: var(--secondary-blue);
+}
+
+
+
