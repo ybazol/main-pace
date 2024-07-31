@@ -679,5 +679,155 @@ button:hover {
   background-color: var(--secondary-blue);
 }
 
+/* Footer */
+
+.footer {
+  margin: 200px;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: center;
+  align-items: start;
+  margin-bottom: 200px;
+  gap: 20px;
+}
+
+.footer-section  {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section h1 {
+  color: var(--main-text);
+  font-size: 25px;
+  margin: 0;
+  padding-bottom: 40px;
+  text-decoration: underline;
+}
+
+.footer-section ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  display: flex;
+  align-items: start;
+  padding: 0;
+  text-align: left;
+  padding-bottom: 30px;
+  font-weight: 300;
+  font-family: lato;
+}
+
+.footer-section ul li a:hover {
+  font-weight: bold;
+}
+
+.footer-section .blog-text a {
+  font-size: 18px;
+}
+
+.footer-section .blog-text a img {
+  background-color: white;
+}
+
+.footer-section .blog-text img {
+  padding-right: 10px;
+}
+
+.footer-section .form-group input{
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.footer-section .form-group button {
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.footer-section .social-media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+}
+
+.footer-section a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 300;
+  color: black;
+  font-family: lato;
+}
+
+.footer-section a img {
+  align-items: center;
+  background-color: #f2f1ff;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.footer-section a:hover {
+  color: var(--main-purple);
+  font-weight: bold;
+}
+
+.bottom-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.bottom-footer .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.bottom-footer .logo img {
+  width: 60px;
+  padding-right: 15px;
+}
+
+.bottom-footer .logo h1 {
+  font-size: 15px;
+  font-family: lato;
+  color: var(--main-purple);
+  line-height: 20px;
+}
+
+.bottom-footer .logo h1 span {
+  color: var(--secondary-blue);
+  font-size: 13px;
+}
+
+.bottom-footer p {
+  color: black;
+  font-size: 15px;
+  font-family: lato;
+  font-weight: 300;
+}
+
+
+
+
+
+
 
 
