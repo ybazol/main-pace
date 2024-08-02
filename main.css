@@ -871,6 +871,144 @@ button {
   font-weight: 300;
 }
 
+/* Service Grid */
+
+.service-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 90px;
+}
+
+.service-grid h1 {
+  color: var(--main-text);
+  font-size: 62px;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+
+.service-grid h3 {
+  color: var(--main-text);
+  font-size: 22px;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.service-grid .service {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-grid .service .left {
+  width: 700px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px gray;
+}
+
+.service-grid .service .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  text-align: center;
+  width: 650px;
+  height: 530px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--main-purple);
+}
+
+.service-grid .service .right h2 {
+  color: var(--main-text);
+  padding-bottom: 20px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.service-grid .service .right p {
+  color: var(--main-text);
+  letter-spacing: .5px;
+  padding-bottom: 20px;
+  max-width: 500px;
+  font-size: 18px;
+}
+
+.service-grid .service .right button {
+  padding: 18px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.service-grid .service .right button:hover {
+  background-color: var(--secondary-blue);
+}
+
+.service-grid .service-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.service-grid .service-2 .right {
+  width: 725px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px gray;
+}
+
+.service-grid .service-2 .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  text-align: center;
+  width: 560px;
+  height: 530px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px var(--main-purple);
+  padding-left: 100px;
+}
+
+.service-grid .service-2 .left h2 {
+  color: var(--main-text);
+  padding-bottom: 20px;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.service-grid .service-2 .left p {
+  color: var(--main-text);
+  letter-spacing: .5px;
+  padding-bottom: 20px;
+  max-width: 500px;
+  font-size: 18px;
+}
+
+.service-grid .service-2 .left button {
+  padding: 18px;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.service-grid .service-2 .left button:hover {
+  background-color: var(--secondary-blue);
+}
 
 
 
